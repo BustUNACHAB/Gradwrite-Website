@@ -1,0 +1,47 @@
+:root {
+    --light-purple: #BFA0EB;
+    --medium-light-purple: #9754CB;
+    --medium-dark-purple:#6237A0;
+    --dark-purple: #28104E;
+}
+body {
+    display: flex;
+    background-color: var(--light-purple);
+    font-family: "Oxygen", sans-serif;
+    margin:0px;
+    justify-content:space-between;
+}
+
+.logo {
+    height: 25px;
+    width: 25px;
+}
+
+#header {
+    height: 50px;
+    width: auto;
+    background-color: white;
+    display:flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items:center;
+    position:sticky;
+    flex-grow:1;
+    flex-shrink:0;
+}
+
+#left-header {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+#right-header {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+#selected {
+    color: var(--medium-dark-purple);
+}
