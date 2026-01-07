@@ -140,10 +140,10 @@ ul li a {
 
 .fade-right {
   position: absolute;
-  left: 960px;
+  right: 360px;
   z-index: 1;
   background-image: linear-gradient(to left, rgba(191,160,235,1), rgba(191,160,235,0)); 
-  width: 180px;
+  width: 130px;
   height: 530px;
 }
 
