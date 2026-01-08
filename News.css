@@ -40,7 +40,9 @@ body {
   flex-direction: row;
   overflow: scroll;
   gap: 20px;
-  width: 1100px;
+  width: auto;
+  padding-left: 110px;
+  padding-right: 370px;
 }
 
 .block {
@@ -107,10 +109,6 @@ body {
   height: 530px;
 }
 
-.news-buffer {
-  min-width: 70px;
-}
-
 #archive {
   background-color: var(--medium-light-purple);
   position: fixed;
@@ -132,8 +130,10 @@ body {
   display: flex;
   flex-direction: column;
   margin-left: 30px;
-  height: 530px;
+  height: 450px;
   gap: 12px;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
 
 .archive-block {
@@ -200,10 +200,6 @@ body {
   height: 110px;
 }
 
-.archive-buffer {
-  min-height: 40px;
-}
-
 #footer {
   display: flex;
   align-items: center;
@@ -217,4 +213,16 @@ body {
 
 #contact {
   margin-right: 30px;
+}
+
+@media (max-width: 900px) {
+  #archive {
+    display: none;
+  }
+  .fade-right {
+    right: 0;
+  }
+  #blocks {
+    padding-right: 20px;
+  }
 }
