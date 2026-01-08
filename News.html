@@ -2,23 +2,46 @@
 <html lang="en-CA">
 <head>
   <title>Gradwrite Trivia</title>
-  <link rel="icon" type="image/x-icon" href=".\Gradwrite_Logo.png">
-  <link rel="stylesheet" href="./News.css">
+  <link rel="icon" type="image/x-icon" href="Gradwrite_Logo.png">
+  <link rel="stylesheet" href="News.css">
+  <link rel="stylesheet" href="Navigation.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <script>
+    function expandNavBar() {
+      if (document.getElementById('drop-right-bar').style.display == 'none') {
+        document.getElementById('drop-right-bar').style.display = 'block';
+      } else {
+        document.getElementById('drop-right-bar').style.display = 'none';
+      }
+    }
+  </script>
 </head>
 
 <body>
-    <ul class="navigation">
-      <li><a href="./FAQ.html" class="option">FAQ</a></li>
-      <li><a href="./Our_Team.html" class="option">Our Team</a></li>
-      <li><a href="./Resources.html" class="option">Resources</a></li>
-      <li><a href="./Packs.html" class="option">Packs</a></li>
-      <li><a href="./Tournaments.html" class="option">Tournaments</a></li>
-      <li><a href="./News.html" id="selected">News</a></li>
-      <li><a href="./News.html" class="logo"><img src=".\Gradwrite_Logo.png" alt="Gradwrite Logo" height="38" width="38"></a></li>
-      <li><a href="./News.html" style="float:left">Gradwrite</a></li>
+  <div class="navigation">
+    <ul id="left-bar">
+      <li><a href="News.html" class="logo"><img src="Gradwrite_Logo.png" alt="Gradwrite Logo" height="38" width="38"></a></li>
+      <li><a href="News.html" class="links">Gradwrite</a></li>
+    </ul>
+    <ul id="right-bar">
+      <li><a href="News.html" id="selected" class="links">News</a></li>
+      <li><a href="Tournaments.html" class="option links">Tournaments</a></li>
+      <li><a href="Packs.html" class="option links">Packs</a></li>
+      <li><a href="Resources.html" class="option links">Resources</a></li>
+      <li><a href="Our_Team.html" class="option links">Our Team</a></li>
+      <li><a href="FAQ.html" class="option links">FAQ</a></li>
+    </ul>
+    <div id="waffle" onClick="expandNavBar()"></div>
+  </div>
+    <ul id="drop-right-bar">
+      <li><a href="News.html" id="selected" class="links">News</a></li>
+      <li><a href="Tournaments.html" class="option links">Tournaments</a></li>
+      <li><a href="Packs.html" class="option links">Packs</a></li>
+      <li><a href="Resources.html" class="option links">Resources</a></li>
+      <li><a href="Our_Team.html" class="option links">Our Team</a></li>
+      <li><a href="FAQ.html" class="option links">FAQ</a></li>
     </ul>
 
   <h1 id="title">News</h1>
