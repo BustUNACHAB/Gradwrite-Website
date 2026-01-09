@@ -16,6 +16,18 @@
         document.getElementById('drop-right-bar').style.display = 'none';
       }
     }
+
+    function showAnswer(n) {
+      const answer = "answer"+n;
+      const plus = "plus"+n;
+      if (document.getElementById(plus).innerHTML == "+") {
+        document.getElementById(plus).innerHTML = "–";
+        document.getElementById(answer).style.display = "block";
+      } else {
+        document.getElementById(plus).innerHTML = "+";
+        document.getElementById(answer).style.display = "none";
+      }
+    }
   </script>
 </head>
 
@@ -44,8 +56,47 @@
       <li><a href="FAQ.html" id="selected" class="links">FAQ</a></li>
     </ul>
 
+  <h1 id="title">FAQs</h1>
+
+  <div id="QA">
+    <div class="question">
+      <h3>Question</h3>
+      <h1 id="plus1" class="plus" onClick="showAnswer('1')">+</h1>
+    </div>
+    <p id="answer1" class="answer">Answer</p>
+
+    <div class="question">
+      <h3>Question</h3>
+      <h1 id="plus2" class="plus" onClick="showAnswer('2')">+</h1>
+    </div>
+    <p id="answer2" class="answer">Answer</p>
+
+    <div class="question">
+      <h3>Question</h3>
+      <h1 id="plus3" class="plus" onClick="showAnswer('3')">+</h1>
+    </div>
+    <p id="answer3" class="answer">Answer</p>
+
+    <div class="question">
+      <h3>Question</h3>
+      <h1 id="plus4" class="plus" onClick="showAnswer('4')">+</h1>
+    </div>
+    <p id="answer4" class="answer">Answer</p>
+
+    <div class="question">
+      <h3>Question</h3>
+      <h1 id="plus5" class="plus" onClick="showAnswer('5')">+</h1>
+    </div>
+    <p id="answer5" class="answer">Answer</a>.</p>
+
+    <div class="question">
+      <h3>Question</h3>
+      <h1 id="plus6" class="plus" onClick="showAnswer('6')">+</h1>
+    </div>
+    <p id="answer6" class="answer">Answer</p>
+  </div>
+
   <div id="footer"><p id="contact">contact us at gradwritetrivia@gmail.com</p></div>
 </body>
-
 
 </html>
