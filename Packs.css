@@ -16,6 +16,68 @@ body {
   padding: 0;
   background: var(--light-purple);
   font-family: "Oxygen", sans-serif;
+  overflow: hidden;
+}
+
+#main {
+  margin-left: 80px;
+  max-width: 100vw;
+  overflow-y: auto;
+  max-height: calc(100vh - 120px);
+  scrollbar-gutter: stable;
+  padding-bottom: 20px;
+}
+
+#title {
+  margin: 0;
+  margin-left: 20px;
+  margin-top: 20px;
+  padding: 10px;
+  font-size: 50px;
+}
+
+.tournament {
+  background-color: var(--medium-light-purple);
+  border-radius: 8px;
+  height: 40px;
+  margin-top: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: gold;
+  max-width: 1070px;
+  height: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  font-size: 30px;
+}
+
+.packs {
+  display: none;
+  flex-direction: row;
+  gap: 5px;
+  padding-top: 5px;
+  max-width: 1070px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.packs a {
+  text-decoration: none;
+}
+
+.packs div {
+  background-color: var(--medium-dark-purple);
+  border-radius: 8px;
+  width: 70px;
+  min-width: 70px;
+  aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 25px;
+  font-weight: bold;
 }
 
 #footer {
@@ -31,4 +93,13 @@ body {
 
 #contact {
   margin-right: 30px;
+}
+
+@media (max-width: 1155px) {
+  #main {
+    margin-left: auto;
+  }
+  .tournament, .packs {
+    width: calc(100vw - 25px);
+  }
 }

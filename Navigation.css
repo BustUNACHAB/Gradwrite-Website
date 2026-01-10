@@ -23,7 +23,7 @@
   margin-bottom: 0;
   padding-right: 30px;
   overflow: hidden;
-  width: 600px;
+  width: 605px;
   margin-right: 0;
 }
 
@@ -82,7 +82,7 @@ li .option:hover {
   z-index: 2;
 }
 
-@media (max-width: 850px) {
+@media (max-width: 870px) {
   #right-bar {
     display: none;
   }
