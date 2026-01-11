@@ -18,6 +18,12 @@ body {
   font-family: "Oxygen", sans-serif;
 }
 
+#main {
+  max-height: calc(100vh - 100px);
+  overflow-y: auto;
+  scrollbar-gutter: stable;
+}
+
 #title {
   margin-left: 80px;
   font-size: 50px;
@@ -34,7 +40,6 @@ body {
   overflow-y: auto;
   margin: auto;
   max-width: 800px;
-  max-height: 72vh;
   justify-content: center;
   margin-top: 0;
 }
