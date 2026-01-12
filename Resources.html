@@ -10,10 +10,10 @@
   <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <script>
     function expandNavBar() {
-      if (document.getElementById('drop-right-bar').style.display == 'none') {
-        document.getElementById('drop-right-bar').style.display = 'block';
-      } else {
+      if (document.getElementById('drop-right-bar').style.display == 'block') {
         document.getElementById('drop-right-bar').style.display = 'none';
+      } else {
+        document.getElementById('drop-right-bar').style.display = 'block';
       }
     }
   </script>
@@ -33,12 +33,12 @@
       <li><a href="Our_Team.html" class="option links">Our Team</a></li>
       <li><a href="FAQ.html" class="option links">FAQ</a></li>
     </ul>
-    <div id="waffle" onClick="expandNavBar()"></div>
+    <div id="waffle" onClick="expandNavBar()"><p>≡</p></div>
   </div>
     <ul id="drop-right-bar">
       <li><a href="News.html" class="option links">News</a></li>
       <li><a href="Tournaments.html" class="option links">Tournaments</a></li>
-      <li><a href="Packs.html" class="option links">Packs</a></li>
+      <li><a href="Contact.html" class="option links">Contact</a></li>
       <li><a href="Resources.html" id="selected" class="links">Resources</a></li>
       <li><a href="Our_Team.html" class="option links">Our Team</a></li>
       <li><a href="FAQ.html" class="option links">FAQ</a></li>
@@ -50,42 +50,42 @@
       <a href="Packs.html" class="resource">
         <div class="block">
           <h3 class="block-header">Packs</h3>
-          <p class="block-content">Here you can find an archive of all our past tournament packs.</p>
+          <p class="block-content">An archive of all past Gradwrite tournament packs. We encourage teams to use these to practice for future tournaments.</p>
         </div>
       </a>
 
-      <a href="News.html" class="resource">
+      <a href="Resources/Rules.pdf" class="resource">
         <div class="block">
           <h3 class="block-header">Gameplay Rules</h3>
-          <p class="block-content">Here you can find a list of the rules governing Gradwrite gameplay.</p>
+          <p class="block-content">A detailed and extensive explanation of how to play Gradwrite tournaments.</p>
         </div>
       </a>
 
-      <a href="News.html" class="resource">
+      <a href="Resources/Question-Formats.pdf" class="resource">
         <div class="block">
           <h3 class="block-header">Question Formats</h3>
-          <p class="block-content">Here you can find a list of all question formats we use in our tournaments and how to play them.</p>
+          <p class="block-content">An explanation of each question format and their point values as used in Gradwrite tournaments.</p>
         </div>
       </a>
 
-      <a href="News.html" class="resource">
+      <a href="Resources/Distribution.pdf" class="resource">
         <div class="block">
           <h3 class="block-header">Distribution</h3>
-          <p class="block-content">Here you can find a breakdown of how we distribute categories of knowledge in our packs.</p>
+          <p class="block-content">A breakdown of how we distribute categories of knowledge into our packs.</p>
         </div>
       </a>
 
-      <a href="News.html" class="resource">
+      <a href="Resources/Writing-Tips.pdf" class="resource">
         <div class="block">
           <h3 class="block-header">Writing Tips</h3>
-          <p class="block-content">Here you can find a selection of tips and suggestions to write fun, fair and exciting questions. These are the guidelines we adhere to when putting together questions for our tournaments.</p>
+          <p class="block-content">A selection of writing tips and suggestions developed over the course of putting together our trivia sets. These are the guidelines we adhere to when putting together questions for our tournaments.</p>
         </div>
       </a>
 
-      <a href="News.html" class="resource">
+      <a href="Resources/Code-of-Conduct.pdf" target="_blank" class="resource">
         <div class="block">
           <h3 class="block-header">Code of Conduct</h3>
-          <p class="block-content">Here you can find the code of conduct that we require all participants and staffers of our tournaments to adhere to.</p>
+          <p class="block-content">Our code of conduct outlines the conduct we expect all of our participants and staff to abide by. All attendees at our tournaments are required to agree to abide by this code of conduct to participate.</p>
         </div>
       </a>
     </div>

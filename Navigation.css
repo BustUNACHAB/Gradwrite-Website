@@ -1,3 +1,10 @@
+:root {
+  --light-purple: #BFA0EB;
+  --medium-light-purple: #9754CB;
+  --medium-dark-purple: #6237A0;
+  --dark-purple: #28104E;
+}
+
 .navigation {
   margin: 0;
   padding: 0;
@@ -68,6 +75,16 @@ li .option:hover {
   border-style: solid;
   border-width: 2px;
   border-color: var(--light-purple);
+  align-items: center;
+  justify-content: center;
+}
+
+#waffle p {
+  margin: 0;
+  padding: 0;
+  font-size: 40px;
+  text-align: center;
+  color: var(--dark-purple);
 }
 
 #drop-right-bar {
@@ -88,7 +105,7 @@ li .option:hover {
   }
 
   #waffle {
-    display: block;
+    display: flex;
   }
 }
 
