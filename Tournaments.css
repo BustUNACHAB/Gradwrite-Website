@@ -86,21 +86,6 @@ body {
   display: flex;
 }
 
-#footer {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  height: 50px;
-  bottom: 0;
-  background-color: white;
-  width: 100%;
-  justify-content: right;
-}
-
-#contact {
-  margin-right: 30px;
-}
-
 @media (max-width: 1155px) {
   #main {
     margin-left: auto;
