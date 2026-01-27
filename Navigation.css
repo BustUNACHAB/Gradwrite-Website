@@ -38,10 +38,26 @@
   color: var(--medium-dark-purple);
 }
 
+@keyframes spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
 .logo {
   padding-top: 6px;
   padding-bottom: 2px;
   float: left;
+}
+
+.logo:hover img {
+    animation-name: spin;
+    animation-duration: 5s; 
+    animation-iteration-count: infinite;
+    animation-timing-function: linear; 
 }
 
 .navigation .links {
