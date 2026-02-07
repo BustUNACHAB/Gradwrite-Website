@@ -78,7 +78,7 @@ body {
   font-size: 25px;
   font-weight: bold;
   border-style: solid;
-  border-size: 2px;
+  border-width: 2px;
   border-color: var(--medium-light-purple);
 }
 
