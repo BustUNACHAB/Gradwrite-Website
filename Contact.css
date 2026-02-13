@@ -49,18 +49,3 @@ body {
 .contact-info a:visited {
   color: white;
 }
-
-#footer {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  height: 50px;
-  bottom: 0;
-  background-color: white;
-  width: 100%;
-  justify-content: right;
-}
-
-#contact {
-  margin-right: 30px;
-}

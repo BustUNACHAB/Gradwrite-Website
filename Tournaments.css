@@ -78,27 +78,12 @@ body {
   font-size: 25px;
   font-weight: bold;
   border-style: solid;
-  border-width: 2px;
+  border-size: 2px;
   border-color: var(--medium-light-purple);
 }
 
 #T0 {
   display: flex;
-}
-
-#footer {
-  display: flex;
-  align-items: center;
-  position: absolute;
-  height: 50px;
-  bottom: 0;
-  background-color: white;
-  width: 100%;
-  justify-content: right;
-}
-
-#contact {
-  margin-right: 30px;
 }
 
 @media (max-width: 1155px) {
