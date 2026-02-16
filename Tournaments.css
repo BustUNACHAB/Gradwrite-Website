@@ -16,6 +16,7 @@ body {
   padding: 0;
   background: var(--light-purple);
   font-family: "Oxygen", sans-serif;
+  overflow: hidden;
 }
 
 #main {
@@ -29,7 +30,7 @@ body {
 
 #title {
   margin: 0;
-  margin-left: 20px;
+  margin-left: 15px;
   margin-top: 20px;
   padding: 10px;
   font-size: 50px;
@@ -44,11 +45,12 @@ body {
   justify-content: center;
   align-items: center;
   color: gold;
-  max-width: 1000px;
-  height: 50px;
+  max-width: 1070px;
+  height: auto;
   font-weight: bold;
   font-size: 30px;
   cursor: pointer;
+  padding: 8px;
 }
 
 .tournaments {
@@ -56,7 +58,7 @@ body {
   flex-direction: row;
   gap: 5px;
   padding-top: 5px;
-  max-width: 1000px;
+  max-width: 1070px;
   justify-content: center;
   flex-wrap: wrap;
 }
@@ -86,11 +88,13 @@ body {
   display: flex;
 }
 
-@media (max-width: 1155px) {
+@media (max-width: 1200px) {
   #main {
     margin-left: auto;
+    padding-right: 2vw;
   }
-  .tournament, .packs {
-    width: calc(100vw - 25px);
+  .tournament, .tournaments {
+    max-width: 92vw;
+    min-width: 89vw;
   }
 }
