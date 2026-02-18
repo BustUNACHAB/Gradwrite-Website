@@ -112,7 +112,7 @@ li .option:hover {
   margin: 0;
   margin-top: 50px;
   width: 100vw;
-  z-index: 2;
+  z-index: 4;
 }
 
 @media (max-width: 870px) {
@@ -140,6 +140,7 @@ li .option:hover {
   background-color: white;
   width: 100%;
   justify-content: right;
+  z-index: 3;
 }
 
 #contact {
