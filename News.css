@@ -23,8 +23,8 @@ body {
   margin-left: 80px;
   font-size: 7vh;
   margin-bottom: 0;
-  margin-top: 3vh;
-  margin-bottom: 3vh;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
 }
 
 #main {
@@ -47,7 +47,7 @@ body {
   overflow-x: scroll;
   gap: 20px;
   width: calc(100vw - 580px);
-  height: calc(85vh - 100px);
+  height: calc(88vh - 100px);
   padding-left: 110px;
   padding-right: 110px;
   margin-bottom: 0;
