@@ -18,13 +18,30 @@
       }
     }
   </script>
+  <script>
+    function expandArchive() {
+      if (document.getElementById('archive').style.display == 'none') {
+        document.getElementById('archive').style.display = 'flex';
+        document.getElementById('archive-pull').style.right = '340px';
+        document.getElementById('pull').innerHTML = ">";
+        document.getElementById('fade-right').style.right = '360px';
+        document.getElementById('blocks').style.width = 'calc(100vw - 580px)';
+      } else {
+        document.getElementById('archive').style.display = 'none';
+        document.getElementById('archive-pull').style.right = '0';
+        document.getElementById('pull').innerHTML = "<";
+        document.getElementById('fade-right').style.right = '20px';
+        document.getElementById('blocks').style.width = 'calc(100vw - 215px)';
+      }
+    }
+  </script>
 </head>
 
 <body>
   <div class="navigation">
     <ul id="left-bar">
       <li><a href="News.html" class="logo"><img src="Gradwrite_Logo.png" alt="Gradwrite Logo" height="38" width="38"></a></li>
-      <li><a href="News.html" class="links">Gradwrite</a></li>
+      <li><a href="News.html" id="trivia" class="links">Gradwrite Trivia</a></li>
     </ul>
     <ul id="right-bar">
       <li><a href="News.html" id="selected" class="links">News</a></li>
@@ -77,11 +94,12 @@
         <p class="news-content">This website will be home to everything you need to know about Gradwrite. We have information about our planned and past <a href="Tournaments.html">tournaments</a>, detailed <a href="Resources.html">gameplay rules</a>, <a href="Contact.html">contact information</a>, <a href="FAQ.html">frequently asked questions</a>, <a href="Packs.html">old packs</a>, and <a href="Our_Team.html">our team</a>.</p>
       </div>
     </div>
-    <div class="fade-left"></div>
-    <div class="fade-right"></div>
+    <div id="fade-left"></div>
+    <div id="fade-right"></div>
   </div>
 
-
+    <div id="archive-pull" onClick=expandArchive()><p id="pull"><b>></b></p></div>
+    
     <div id="archive">
       <h1 id="archive-title">Archived News</h1>
       <div id="archive-blocks" class="hide-scroll">
@@ -99,7 +117,7 @@
     </div>
   </div>
 
-  <div id="footer"><p id="contact">contact us at gradwritetrivia@gmail.com</p></div>
+  <div id="footer"><p id="contact">contact us at <a href="mailto:gradwritetrivia@gmail.com">gradwritetrivia@gmail.com</a></p></div>
 
 </body>
 </html>
