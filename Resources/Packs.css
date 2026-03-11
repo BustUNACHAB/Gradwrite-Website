@@ -94,3 +94,7 @@ body {
   font-size: 25px;
   font-weight: bold;
 }
+
+#buffer {
+  min-height: 50px;
+}

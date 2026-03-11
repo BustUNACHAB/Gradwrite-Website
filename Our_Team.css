@@ -67,3 +67,9 @@ body {
 .name {
   width: 210px;
 }
+
+#preamble {
+  padding-left: 10%;
+  font-size: 20px;
+  padding-right: 5%;
+}

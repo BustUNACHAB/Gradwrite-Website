@@ -93,3 +93,7 @@ body {
 #T0 {
   display: flex;
 }
+
+#buffer {
+  min-height: 50px;
+}

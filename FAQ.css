@@ -29,14 +29,12 @@ body {
   display: flex;
   flex-direction: column;
   max-height: calc(100vh - 100px);
+  gap: 3px;
 }
 
 .question {
-  border-style: solid;
-  border-color: var(--medium-dark-purple);
-  border-width: 2px;
-  background-color: var(--medium-light-purple);
-  padding-left: 6px;
+  background-color: var(--medium-dark-purple);
+  padding-left: 18px;
   color: white;
   display: flex;
   flex-direction: row;
@@ -65,4 +63,8 @@ body {
   margin-top: 2vh;
   margin-bottom: 2vh;
   color: var(--very-dark-purple);
+}
+
+#buffer {
+  min-height: 50px;
 }
