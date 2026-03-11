@@ -42,10 +42,11 @@ body {
   padding: 5px;
   color: white;
 }
+
 .contact-info a {
-  color: white;
+  color: var(--link-blue);
 }
 
 .contact-info a:visited {
-  color: white;
+  color: var(--link-blue);
 }
