@@ -62,9 +62,6 @@ body {
   border-radius: 40px;
   display: flex;
   flex-direction: column;
-  border-style: solid;
-  border-width: 3px;
-  border-color: var(--medium-light-purple);
 }
 
 .block-header {
