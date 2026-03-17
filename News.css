@@ -23,7 +23,7 @@ body {
 }
 
 #title {
-  margin-left: 60px;
+  margin-left: 5vw;
   font-size: 50px;
   margin-top: 2vh;
   margin-bottom: 2vh;
@@ -182,10 +182,7 @@ news-content a:visited {
   aspect-ratio: 1/1;
   border-radius: 40px;
   display: flex;
-  flex-direction: column;/*
-  border-style: solid;
-  border-width: 3px;
-  border-color: var(--light-purple);*/
+  flex-direction: column;
 }
 
 .archive-category {

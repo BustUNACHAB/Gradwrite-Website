@@ -24,18 +24,33 @@ body {
 
 #main {
   width: 100vw;
-  overflow-y: auto;
-  max-height: calc(96vh - 180px);
+  max-height: calc(96vh - 165px);
   scrollbar-gutter: stable;
-  padding-bottom: 20px;
+  padding-bottom: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
+}
+
+.tclass {
+  overflow-y: auto;
+  overflow-x: clip;
+  padding-bottom: 20px;
+  scrollbar-gutter: stable;
+}
+
+.tclass h1 {
+  color: var(--very-dark-purple);
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+  margin-top: 0;
 }
 
 #title {
-  margin: 0;
-  margin-left: 60px;
+  margin-top: 0;
+  margin-left: 5vw;
   margin-top: 2vh;
   margin-bottom: 2vh;
   font-size: 50px;
@@ -51,8 +66,7 @@ body {
   justify-content: center;
   align-items: center;
   color: white;
-  max-width: 1070px;
-  width: 90vw;
+  width: 46vw;
   height: auto;
   font-weight: bold;
   font-size: 30px;
@@ -66,10 +80,9 @@ body {
   flex-direction: row;
   gap: 5px;
   padding-top: 5px;
-  max-width: 1070px;
   justify-content: center;
   flex-wrap: wrap;
-  width: 90vw;
+  width: 46vw;
 }
 
 .tournaments a {
@@ -96,4 +109,21 @@ body {
 
 #buffer {
   min-height: 50px;
+}
+
+@media (max-width: 999px) {
+  #main {
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+  .tclass {
+    margin-left: 2vw;
+    width: 94vw;
+    overflow-y: visible;
+  }
+  .tournament, .tournaments {
+    width: 90vw;
+  }
 }
