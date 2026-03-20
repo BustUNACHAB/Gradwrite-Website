@@ -240,6 +240,21 @@ news-content a:visited {
   height: 80px;
 }
 
+@media (max-width: 930px) {
+  #archive {
+    display: none;
+  }
+  #archive-pull {
+    right: 0;
+  }
+  #fade-right {
+    right: 20px;
+  }
+  #blocks {
+    width: calc(100vw - 215px);
+  }
+}
+
 @media (max-width: 600px) {
   #archive, #archive-pull {
     display: none !important;
@@ -258,6 +273,7 @@ news-content a:visited {
     margin-left: 5vw;
     margin-right: 5vw;
     padding-bottom: 70px;
+    overflow-x: visible;
   }
   .block {
     min-width: 90vw;
@@ -268,6 +284,8 @@ news-content a:visited {
   }
   .category {
     font-size: 4vw;
+    margin-top: 6vw;
+    margin-left: 7vw;
   }
   .header {
     font-size: 6vw;
