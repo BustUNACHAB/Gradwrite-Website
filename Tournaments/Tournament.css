@@ -3,6 +3,9 @@
   --medium-light-purple: #9754CB;
   --medium-dark-purple: #6237A0;
   --dark-purple: #28104E;
+  --very-light-purple: #F7EBFF;
+  --very-dark-purple: #53156B;
+  --link-blue: #75D0FA;
 }
 
 .hide-scroll::-webkit-scrollbar {
@@ -14,37 +17,34 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background: var(--light-purple);
+  background: var(--very-light-purple);
   font-family: "Oxygen", sans-serif;
 }
 
 #main {
-  padding-right: 30px;
-  padding-left: 40px;
   overflow-y: auto;
   scrollbar-gutter: stable;
   height: calc(100vh - 100px);
 }
 
 #main div {
-  margin-left: 30px;
+  margin: 20px;
+  margin-left: 5vw;
+  margin-right: 5vw;
+  margin-bottom: 50px;
   background-color: var(--medium-dark-purple);
   border-radius: 25px;
-  border-style: solid;
-  border-size: 3px;
-  border-color: var(--medium-light-purple);
   color: white;
   padding: 15px;
   max-width: 700px;
-  margin-bottom: 10px;
 }
 
 #main div a {
-  color: white;
+  color: var(--link-blue);
 }
 
 #main div a:visited {
-  color: white;
+  color: var(--link-blue);
 }
 
 #main div b {
@@ -52,10 +52,11 @@ body {
 }
 
 #title {
-  margin-left: 20px;
-  margin-top: 20px;
-  padding: 10px;
-  font-size: 40px;
+  margin-left: 5vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
+  font-size: 50px;
+  color: var(--very-dark-purple);
 }
 
 #footer {

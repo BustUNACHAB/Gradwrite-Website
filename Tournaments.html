@@ -32,58 +32,67 @@
 <body>
   <div class="navigation">
     <ul id="left-bar">
-      <li><a href="News.html" class="logo"><img src="Gradwrite_Logo.png" alt="Gradwrite Logo" height="38" width="38"></a></li>
-      <li><a href="News.html" class="links">Gradwrite</a></li>
+      <li><a href="/" class="logo"><img src="Gradwrite_Logo.png" alt="Gradwrite Logo" height="38" width="38"></a></li>
+      <li><a href="/" class="links">Gradwrite Trivia</a></li>
     </ul>
     <ul id="right-bar">
-      <li><a href="News.html" class="option links">News</a></li>
-      <li><a href="Tournaments.html" id="selected" class="links">Tournaments</a></li>
-      <li><a href="Contact.html" class="option links">Contact</a></li>
-      <li><a href="Resources.html" class="option links">Resources</a></li>
-      <li><a href="Our_Team.html" class="option links">Our Team</a></li>
-      <li><a href="FAQ.html" class="option links">FAQ</a></li>
+      <li><a href="/" class="option links">News</a></li>
+      <li><a href="Tournaments" id="selected" class="links">Tournaments</a></li>
+      <li><a href="Contact" class="option links">Contact</a></li>
+      <li><a href="Resources" class="option links">Resources</a></li>
+      <li><a href="Our_Team" class="option links">Our Team</a></li>
+      <li><a href="FAQ" class="option links">FAQ</a></li>
     </ul>
     <div id="waffle" onClick="expandNavBar()"><p>≡</p></div>
   </div>
     <ul id="drop-right-bar">
-      <li><a href="News.html" class="option links">News</a></li>
-      <li><a href="Tournaments.html" id="selected" class="links">Tournaments</a></li>
-      <li><a href="Contact.html" class="option links">Contact</a></li>
-      <li><a href="Resources.html" class="option links">Resources</a></li>
-      <li><a href="Our_Team.html" class="option links">Our Team</a></li>
-      <li><a href="FAQ.html" class="option links">FAQ</a></li>
+      <li><a href="/" class="option links">News</a></li>
+      <li><a href="Tournaments" id="selected" class="links">Tournaments</a></li>
+      <li><a href="Contact" class="option links">Contact</a></li>
+      <li><a href="Resources" class="option links">Resources</a></li>
+      <li><a href="Our_Team" class="option links">Our Team</a></li>
+      <li><a href="FAQ" class="option links">FAQ</a></li>
     </ul>
 
+  <h1 id="title">Tournaments</h1>
+
   <div id="main">
-    <h1 id="title">Tournaments</h1>
-    <div onClick="showTournaments(0)" class="tournament">Gradwrite Spring 2026</div>
-    <div id="T0" class="tournaments">
-      <a href="Tournaments/T5Vancouver.html"><div>Vancouver</div></a>
-      <a href="Tournaments/T5Toronto.html"><div>Toronto</div></a>
-      <a href="Tournaments/T5Ottawa.html"><div>Ottawa</div></a>
+    <div class="tclass hide-scroll">
+      <h1>High School</h1>
+      <div onClick="showTournaments(0)" class="tournament">Gradwrite Spring 2026</div>
+      <div id="T0" class="tournaments">
+        <a href="Tournaments/T5Vancouver"><div>Vancouver</div></a>
+        <a href="Tournaments/T5Toronto"><div>Toronto</div></a>
+        <a href="Tournaments/T5Ottawa"><div>Ottawa</div></a>
+      </div>
+      <div onClick="showTournaments(3)" class="tournament">Gradwrite Spring 2025</div>
+      <div id="T3" class="tournaments">
+        <a href="Tournaments/T3Online"><div>Online</div></a>
+      </div>
+      <div onClick="showTournaments(2)" class="tournament">Consensus Gradwrite Fall 2024</div>
+      <div id="T2" class="tournaments">
+        <a href="Tournaments/T2Vancouver"><div>Vancouver</div></a>
+        <a href="Tournaments/T2Calgary"><div>Calgary</div></a>
+        <a href="Tournaments/T2Toronto"><div>Toronto</div></a>
+        <a href="Tournaments/T2Ottawa"><div>Ottawa</div></a>
+      </div>
+      <div onClick="showTournaments(1)" class="tournament">Gradwrite Spring 2024</div>
+      <div id="T1" class="tournaments">
+        <a href="Tournaments/T1Online"><div>Online</div></a>
+      </div>
     </div>
-    <div onClick="showTournaments(4)" class="tournament">Gradwrite Summer Open 2025</div>
-    <div id="T4" class="tournaments">
-      <a href="Tournaments/T4Waterloo.html"><div>Waterloo</div></a>
-      <a href="Tournaments/T4Ottawa.html"><div>Ottawa</div></a>
-    </div>
-    <div onClick="showTournaments(3)" class="tournament">Gradwrite Spring 2025</div>
-    <div id="T3" class="tournaments">
-      <a href="Tournaments/T3Online.html"><div>Online</div></a>
-    </div>
-    <div onClick="showTournaments(2)" class="tournament">Consensus Gradwrite Fall 2024</div>
-    <div id="T2" class="tournaments">
-      <a href="Tournaments/T2Vancouver.html"><div>Vancouver</div></a>
-      <a href="Tournaments/T2Toronto.html"><div>Toronto</div></a>
-      <a href="Tournaments/T2Ottawa.html"><div>Ottawa</div></a>
-    </div>
-    <div onClick="showTournaments(1)" class="tournament">Gradwrite Spring 2024</div>
-    <div id="T1" class="tournaments">
-      <a href="Tournaments/T1Online.html"><div>Online</div></a>
-    </div>
+    <div class="tclass hide-scroll">
+      <h1>Open</h1>
+      <div onClick="showTournaments(4)" class="tournament">Gradwrite Summer Open 2025</div>
+      <div id="T4" class="tournaments">
+        <a href="Tournaments/T4Waterloo"><div>Waterloo</div></a>
+        <a href="Tournaments/T4Ottawa"><div>Ottawa</div></a>
+      </div>
+      <div id="buffer"></div>
+    </div
   </div>
 
-  <div id="footer"><p id="contact">contact us at gradwritetrivia@gmail.com</p></div>
+  <div id="footer"><p id="contact">contact us at <a href="mailto:gradwritetrivia@gmail.com">gradwritetrivia@gmail.com</a></p></div>
 </body>
 
 

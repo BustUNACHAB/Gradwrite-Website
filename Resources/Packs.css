@@ -3,6 +3,9 @@
   --medium-light-purple: #9754CB;
   --medium-dark-purple: #6237A0;
   --dark-purple: #28104E;
+  --very-light-purple: #F7EBFF;
+  --very-dark-purple: #53156B;
+  --link-blue: #75D0FA;
 }
 
 .hide-scroll::-webkit-scrollbar {
@@ -14,26 +17,44 @@ body {
   flex-direction: column;
   margin: 0;
   padding: 0;
-  background: var(--light-purple);
+  background: var(--very-light-purple);
   font-family: "Oxygen", sans-serif;
   overflow: hidden;
 }
 
 #main {
-  margin-left: 80px;
-  max-width: 100vw;
-  overflow-y: auto;
-  max-height: calc(100vh - 120px);
+  width: 100vw;
+  max-height: calc(96vh - 165px);
   scrollbar-gutter: stable;
-  padding-bottom: 20px;
+  padding-bottom: 0;
+  display: flex;
+  flex-direction: row;
+  gap: 12px;
+  justify-content: center;
 }
 
 #title {
-  margin: 0;
-  margin-left: 20px;
-  margin-top: 20px;
-  padding: 10px;
+  margin-top: 0;
+  margin-left: 5vw;
+  margin-top: 2vh;
+  margin-bottom: 2vh;
   font-size: 50px;
+  color: var(--very-dark-purple);
+}
+
+.tclass {
+  overflow-y: auto;
+  overflow-x: clip;
+  padding-bottom: 20px;
+  scrollbar-gutter: stable;
+}
+
+.tclass h1 {
+  color: var(--very-dark-purple);
+  text-align: center;
+  font-size: 40px;
+  margin: 10px;
+  margin-top: 0;
 }
 
 .tournament {
@@ -44,30 +65,37 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-  color: yellow;
-  max-width: 1070px;
+  color: white;
   height: auto;
   font-weight: bold;
   font-size: 30px;
   cursor: pointer;
   padding: 8px;
+  width: 46vw;
+  text-align: center;
+}
+
+.T {
+  display: none;
+  flex-direction: column;
+  align-items: center;
 }
 
 .packs {
-  display: none;
+  display: flex;
   flex-direction: row;
   gap: 5px;
   padding-top: 5px;
-  max-width: 1070px;
   justify-content: center;
   flex-wrap: wrap;
+  width: 46vw;
 }
 
 .packs a {
   text-decoration: none;
 }
 
-.packs div {
+.packs a div {
   background-color: var(--medium-dark-purple);
   border-radius: 8px;
   width: 70px;
@@ -81,13 +109,23 @@ body {
   font-weight: bold;
 }
 
-@media (max-width: 1200px) {
+#buffer {
+  min-height: 50px;
+}
+
+@media(max-width: 999px) {
   #main {
-    margin-left: auto;
-    padding-right: 2vw;
+    flex-direction: column;
+    justify-content: flex-start;
+    overflow-y: auto;
+    scrollbar-gutter: stable;
+  }
+  .tclass {
+    margin-left: 2vw;
+    width: 94vw;
+    overflow-y: visible;
   }
   .tournament, .packs {
-    max-width: 92vw;
-    min-width: 89vw;
+    width: 90vw;
   }
 }
